@@ -1,0 +1,155 @@
+/*Imagem de fundo do site*/
+.wallpaper-serv {
+    background-image: url('../../img/fundo/wave\ \(6\).svg');
+    background-size: cover; /* Faz a imagem preencher o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição */
+}
+
+.serv-paragraph {
+    font-size: 1rem;
+}
+.serv-title-primary {
+    padding: 4rem 0 2rem;
+}
+
+.custom-serv-title {
+    margin-top: 9rem;
+    margin-bottom: 2rem;
+}
+
+.card-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.1s ease-out, transform 0.1s ease-out;
+}
+
+.card-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.serv-cards {
+    height: 280px;
+    gap: 5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.serv-cards img {
+    width: 30%;
+    height: 30%;
+}
+
+.serv-cards:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    background-color: transparent;
+}
+
+
+.wallpaper-serv-two {
+    background-image: url('../../img/fundo/wave\ \(7\).svg');
+    background-size: cover; /* Faz a imagem preencher o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição */
+}
+.wallpaper-serv-three {
+    background-image: url('../../img/fundo/wave\ \(8\).svg');
+    background-size: cover; /* Faz a imagem preencher o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição */
+}
+
+.serv-title-h5 {
+    font-weight: 400;
+}
+
+
+.serv-desc {
+    margin-bottom: 8rem;
+}
+
+.serv-title {
+    padding-top: 2rem;
+}
+.serv-title-secundary {
+    padding-bottom: 2rem;
+}
+
+.style-serv-image img {
+    width: 80px;
+    height: 70px;
+}
+
+
+.faq-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-header h1 {
+    font-size: 30px;
+    color: #333;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #3498db;
+}
+
+.faq-answer {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #555;
+    display: none;
+}
+
+.faq-question i {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.open i {
+    transform: rotate(180deg);
+}
+
+.visible {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,187 @@
+h1.custom-size {
+    font-size: 2.3rem;
+}
+
+.home-page {
+    margin-top: 6%;
+    margin-bottom: 2%;
+}
+
+/*Mover a imagem com movimento do mouse*/
+#movable-image {
+    transition: transform 0.1s ease-out;
+    width: 100%;
+    height: auto;
+    will-change: transform;
+}
+
+
+h2.custom-size-h2 {
+    padding-bottom: 50px;
+}
+
+h3 .custom-h3 {
+    font-size: 1.5rem;
+}
+
+/*Imagem de fundo do site*/
+.wallpaper {
+    background-image: url('../../img/fundo/wave.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.wallpaper-two {
+    background-image: url('../../img/fundo/wave\ \(1\).svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wallpaper-three {
+    background-image: url('../../img/fundo/wave\ \(2\).svg');
+    background-size: cover;
+    background-position: center;
+  background-repeat: no-repeat;
+}
+.wallpaper-four {
+    background-image: url('../../img/fundo/wave\ \(3\).svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/*Areas em que a empresa atua*/
+.home-cards {
+    gap: 5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.home-cards:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+.home-cards img{
+    width: 30%;
+    height: 30%;
+}
+.list-unstyled li {
+    display: flex;
+    align-items: center;
+}
+.list-unstyled li i {
+    margin-right: 1%;
+    color: #28a7466d;
+}
+
+/*carossel de vantagens da empresa*/
+.carousel-inner {
+    width: 100%;
+    height: 300px; 
+}
+
+.carousel-inner img {
+    height: 100%;
+    object-fit: cover;
+}
+.custom-carousel {
+     width: 80%;
+    margin: 0 auto
+}
+
+.custom-prev, .custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #003cff;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+}
+  
+.custom-prev {
+    left: -50px; 
+}
+  
+.custom-next {
+    right: -50px;
+}
+  
+.custom-icon {
+    font-size: 24px;
+}
+
+.carousel-indicators li {
+    background-color: #003cff;
+}
+
+
+/*Missão Visão e Valores da empresa*/
+.desc-list{
+    list-style: none;
+}
+.desc-list li {
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+}
+
+.desc-list li::before {
+    content: "•"; 
+    position: absolute;
+    left: 5px; 
+    color: #0056b3; 
+    font-weight: bold;
+}
+
+
+/*fotos de alguns trabalhos realizados*/
+.portfolio-img {
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.portfolio-img img {
+  transition: transform 0.5s ease;
+  width: 350px;
+  height: 200px;
+  display: block;
+}
+
+.portfolio-img:hover img {
+  transform: translateY(-10%);
+}
+
+@media (max-width: 768px) {
+    .carousel-inner {
+        width: 100%;
+        height: 500px; 
+    }
+
+}
+@media (max-width: 480px) {
+    .carousel-inner {
+        width: 100%;
+        height: 600px; 
+    }
+}

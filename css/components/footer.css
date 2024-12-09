@@ -1,0 +1,69 @@
+footer {
+    color: #fff; /* Cor do texto */
+    padding: 20px 0;
+}
+
+.wallpaper-footer {
+    background-image: url('../../img/fundo/wave\ \(5\).svg');
+    background-size: cover; /* Faz a imagem preencher o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição */
+}
+
+.wallpaper-footer .container-fluid {
+    margin-top: 20px;
+}
+
+.footer-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffc107; /* Cor amarela para o título */
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #ffc107; /* Cor amarela no hover */
+}
+
+/* Logo e Parágrafo Centralizado no Eixo Y */
+.text-md-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza no eixo Y */
+    align-items: center; /* Centraliza no eixo X */
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .text-md-start {
+        align-items: flex-start; /* Realinha à esquerda em telas maiores */
+        text-align: left;
+    }
+}
+
+/* Alinhamento do H5 */
+.wallpaper-footer h5 {
+    text-align: left; /* Força alinhamento à esquerda */
+}
+
+/* Responsividade */
+@media (max-width: 770px) {
+    .wallpaper-footer .row > div {
+        text-align: center; /* Centraliza os itens em telas menores */
+        margin-bottom: 20px;
+    }
+}

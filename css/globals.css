@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding-top: 55px; /* Espaço para a navbar fixa */
+  overflow-x: hidden;
+}
+
+.style-title {
+  color: darkblue;
+}
+.feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  height: 60px;
+}
+.feature-icon img {
+  width: 60px;
+  height: 60px;
+}

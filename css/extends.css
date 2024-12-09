@@ -1,0 +1,8 @@
+@import './globals.css';
+
+@import './components/about.css';
+@import './components/servicos.css';
+@import './components/portifolio.css';
+@import './components/blog.css';
+@import './components/contato.css';
+@import './components/footer.css';

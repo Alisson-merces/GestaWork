@@ -1,0 +1,16 @@
+.cards-port {
+    overflow: hidden;
+}
+
+.card-img {
+    transition: transform 0.3s ease;
+}
+
+.cards-port:hover .card-img {
+    transform: translateY(-10%);
+}
+
+.card-title {
+    margin: 1.5rem 0 1rem;
+    font-weight: 400;
+}
